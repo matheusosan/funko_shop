@@ -1,0 +1,77 @@
+{
+  "funkos": [
+    {
+      "id": 1,
+      "title":
+        "Funko Boneco de vinil do Batman Pop!",
+      "price": 10.99,
+      "icon": "https://m.media-amazon.com/images/I/71S9zl2BhiL._AC_UL320_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Funko Pop 932 Naruto Six Path Sage",
+      "price": 30.99,
+      "icon": "https://m.media-amazon.com/images/I/518kzbCAPzS._AC_UL320_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Pop Funko 132 Harry W/The Stone Harry Potter",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/51mhk01NtDL._AC_UL320_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Pop Bride of Chucky Chucky Vinyl",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/81pVCenn--L._AC_UL320_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Pop Godfather Vito Corleone Vinyl",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/51z+DwwfrbL._AC_UL320_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Funko Pop 1047 Lilo & Stitch Lilo W/Pudge",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/61ls7UocWxL._AC_UL320_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Pop Thor Love and Thunder Thor Vinyl",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/51Rk9AzLzmL._AC_UL320_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Funko POP! Anthony Davis - NBA #120",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/51DVCh6hqHL._AC_UL320_.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Funko Pop Anime: Naruto: Shippuden - Tobi #184",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/51-H7QOsVES._AC_UL320_.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Pop Doctor Strange Multiverse of Madness Dead Strange",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/51MmktikCYL._AC_UL320_.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Funko, SASUKE MARKS 35525",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/61it+fheVKL._AC_UL320_.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Pop Pokemon Charizard Vinyl",
+      "price": 20.99,
+      "icon": "https://m.media-amazon.com/images/I/51nVRfG47ZS._AC_UL320_.jpg"
+    }
+  ]
+}
