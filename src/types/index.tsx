@@ -7,8 +7,8 @@ export interface IFunkos {
   price: number;
   images: {
     icon1: string
-    icon2: string
-    icon3: string 
+    icon2?: string
+    icon3?: string 
   }
 }
 
