@@ -6,9 +6,9 @@ export interface IFunkos {
   title: string;
   price: number;
   images: {
-    icon1: string | undefined
-    icon2: string | undefined
-    icon3: string | undefined
+    icon1: string | StaticImageData
+    icon2: string | StaticImageData
+    icon3: string | StaticImageData
   }
 }
 
