@@ -4,8 +4,8 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image";
 import React, { useContext, useState } from "react";
 import funkos from "../../services/index";
-import * as S from "./styles";
 import Header from "@/components/Header";
+import * as S from '../../styles/product'
 
 interface FunkoProps {
   funko: IFunkos;
