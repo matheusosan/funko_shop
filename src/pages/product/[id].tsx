@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, { useContext, useState } from "react";
 import funkos from "../../services/index";
 import Header from "@/components/Header";
-import * as S from '../../styles/product'
+import * as S from "../../styles/product";
 
 interface FunkoProps {
   funko: IFunkos;
@@ -19,39 +19,50 @@ const Funkos = ({ funko }: FunkoProps) => {
       <Header />
       <S.ProductPage>
         <div>
+          <div className="photo-gallery">
+            <Image
+              style={{ border: "1px solid gray"}}
+              src={funko.images.icon1}
+              alt={funko.title}
+              width={60}
+              height={60}
+            />
+            {funko.images.icon2 && (
+              <Image
+                style={{ border: "1px solid gray" }}
+                src={funko.images.icon2}
+                alt={funko.title}
+                width={60}
+                height={60}
+              />
+            )}
+            {funko.images.icon3 && (
+              <Image
+                style={{ border: "1px solid gray" }}
+                src={funko.images.icon3}
+                alt={funko.title}
+                width={60}
+                height={60}
+              />
+            )}
+          </div>
           <Image
+            style={{marginLeft: "50px"}}  
             src={funko.images.icon1}
             alt={funko.title}
-            width={50}
-            height={50}
-            
+            width={250}
+            height={300}
           />
-          {funko.images.icon2 && (
-            <Image
-              src={funko.images.icon2}
-              alt={funko.title}
-              width={50}
-              height={50}
-            />
-          )}
-          {funko.images.icon3 && (
-            <Image
-              src={funko.images.icon3}
-              alt={funko.title}
-              width={50}
-              height={50}
-            />
-          )}
         </div>
-        <Image
-          src={funko.images.icon1}
-          alt={funko.title}
-          width={250}
-          height={300}
-        />
         <div className="product-details">
           <h1>{funko.title}</h1>
-          <p>R${funko.price}</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maxime
+            eaque adipisci eligendi, ipsum possimus?
+          </p>
+          <p style={{ fontSize: "1.2rem", fontWeight: "400" }}>
+            R${funko.price}
+          </p>
 
           <button onClick={() => addToCart(funko.id)}>
             Adicionar ao Carrinho

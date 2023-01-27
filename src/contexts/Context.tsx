@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react";
-
 import funkos from "@/services";
 import { IChildren, IContextProps, IShoppingCartItem } from "@/types";
 
@@ -86,6 +85,13 @@ const CartProvider = ({ children }: IChildren) => {
     setShoppingCart([]);
   };
 
+  ////// SIDEBAR /////
+  const [sidebar, setSidebar] = useState(false)
+
+  const handleSidebar = () => {
+    setSidebar(!sidebar)
+  }
+
   return (
     <CartContext.Provider
       value={{
@@ -97,6 +103,8 @@ const CartProvider = ({ children }: IChildren) => {
         handleClearCart,
         increaseCart,
         decreaseCart,
+        handleSidebar,
+        sidebar,
       }}
     >
       {children}

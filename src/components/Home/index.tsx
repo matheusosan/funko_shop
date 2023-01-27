@@ -12,7 +12,7 @@ const Home = () => {
       <S.MainContent>
         <div className="content-container">
           <div className="img-container">
-            <img src={`${godfather.src}`} alt=""style={{height: '300px'}} />
+            <img src={`${godfather.src}`} alt=""style={{height: '250px'}} />
           </div>
           <div className="home-text">
             <h2>
@@ -40,7 +40,7 @@ const Home = () => {
               dolorum in illum officiis beatae quibusdam ex eveniet debitis
               animi,
             </p>
-            <Link href="/product"><button>Explorar</button></Link>
+            <Link href="/product"><button style={{cursor: 'pointer'}}>Explorar</button></Link>
           </div>
         </div>
 

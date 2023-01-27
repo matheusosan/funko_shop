@@ -8,12 +8,12 @@ export const Main = styled.main`
   width: 100%;
   min-height: 80vh;
   height: auto;
-  background: ${props => props.theme.colors.background};
+  background: ${(props) => props.theme.colors.background};
 
-  >h2 {
-    font-family: 'Poppins', sans-serif;
+  > h2 {
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
-    color: ${props => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.text};
   }
 `;
 
@@ -30,7 +30,6 @@ export const CardContainer = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     gap: 2rem;
-
   }
 `;
 
@@ -39,15 +38,14 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background: ${props => props.theme.colors.background};
+  background: ${(props) => props.theme.colors.background};
   width: 200px;
   height: 400px;
   text-align: center;
   box-shadow: 6px 6px 15px -8px rgba(0, 0, 0, 0.75);
   padding: 30px;
   border-radius: 5px;
-  transition: .5s ease;
-
+  transition: 0.5s ease;
 
   img {
     width: 150px;
@@ -57,13 +55,13 @@ export const Card = styled.div`
   h3 {
     color: black;
     font-weight: 700;
-    font-size: .8rem;
+    font-size: 0.9rem;
   }
 
   p {
     color: black;
     font-weight: 400;
-    font-size: .8rem;
+    font-size: 0.9rem;
     cursor: text;
   }
 
@@ -71,14 +69,16 @@ export const Card = styled.div`
     padding: 5px 0;
     border-radius: 5px;
     width: 70%;
-    background: ${props => props.theme.colors.blue1};
+    background: ${(props) => props.theme.colors.blue1};
     font-size: 1.2rem;
-  }
+    cursor: pointer;
 
+    :hover {
+      background: ${(props) => props.theme.colors.blue4};
+    }
+  }
 
   @media (max-width: 768px) {
     width: 150px;
-
-
   }
 `;

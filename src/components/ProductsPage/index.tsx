@@ -20,7 +20,7 @@ const ShoppingCartPage = () => {
             <h3>{funko.title}</h3>
             <p>R${funko.price}</p>
             <button onClick={() => addToCart(funko.id)}>
-              <BsFillCartPlusFill />
+              <BsFillCartPlusFill style={{color: 'white'}}/>
             </button>
           </S.Card>
         ))}

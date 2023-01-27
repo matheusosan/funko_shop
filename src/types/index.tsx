@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import React, { Dispatch, SetStateAction } from "react";
 
 export interface IFunkos {
@@ -11,7 +10,6 @@ export interface IFunkos {
     icon3?: string 
   }
 }
-
 export interface IShoppingCartItem {
   product: IFunkos;
   quantity: number;
@@ -30,4 +28,8 @@ export interface IContextProps {
   handleClearCart(): void;
   increaseCart(id: number): void;
   decreaseCart(id: number): void;
+  handleSidebar(): void,
+  sidebar: boolean,
 }
+
+

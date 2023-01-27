@@ -27,21 +27,20 @@ export const MainContent = styled.div `
             display: flex;
             align-items: center;
             justify-content: center;
-            /* gap: 3rem; */
+            gap: 3rem;
 
 
             .img-container {
-                width: 50%;
-                height: 100%;
                 display: flex;
                 justify-content: center;
+                width: 30%;
             }
             
             .home-text {
                 display: flex;
                 gap: 1rem;
                 flex-direction: column;
-                width: 50%;
+                width: 30%;
 
                 button {
                     padding: 10px 20px;
@@ -65,11 +64,10 @@ export const MainContent = styled.div `
 
         @media (max-width: 768px) {
             gap: 2rem;
-
+            
             .content-container {
                 width: 90%;
                 flex-direction: column;
-
 
                 .home-text {
                     align-items: center;
@@ -78,7 +76,6 @@ export const MainContent = styled.div `
                     h2 {
                         font-size: 1.9rem;
                         text-align: center;
-                        margin-top: 2rem;
                     }
 
                     p {
