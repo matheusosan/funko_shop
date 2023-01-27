@@ -27,10 +27,9 @@ const Sidebar = () => {
                       src={item.product.images.icon1}
                       alt={item.product.title}
                     />
-                    <p>{item.product.title}</p>
+                    <h3>{item.product.title}</h3>
                     <p>R${(item.quantity * item.product.price).toFixed(2)}</p>
                     <BsFillTrashFill
-                      style={{ fontSize: "3rem" }}
                       onClick={() => removeFromCart(item.product.id)}
                     />
                   </S.SideItem>

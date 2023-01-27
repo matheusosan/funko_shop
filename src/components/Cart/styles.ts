@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CartMain = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   min-height: 80vh;
@@ -10,6 +10,7 @@ export const CartMain = styled.div`
   gap: 5rem;
 
   @media (max-width: 768px) {
+    align-items: center;
     flex-direction: column;
     gap: 0;
   }
@@ -20,7 +21,7 @@ export const CartContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 10rem 0;
+  margin: 5rem 0;
   gap: 3rem 0;
   width: 40%;
   background: #f5f5f5;
@@ -105,7 +106,7 @@ export const CartContainer = styled.div`
 export const ReviewOrder = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 5rem;
   gap: 3rem;
 
   .shipment,

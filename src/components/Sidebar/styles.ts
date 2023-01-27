@@ -8,7 +8,7 @@ export const SideBar = styled.aside`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 90%;
   height: 100vh;
   animation: slide-left ease 0.8s;
   box-shadow: 6px 6px 15px -8px rgba(0, 0, 0, 0.75);
@@ -23,6 +23,7 @@ export const SideBar = styled.aside`
 
     svg {
       color: white;
+      font-size: 1.6rem;
     }
   }
 
@@ -60,6 +61,7 @@ export const SideContent = styled.div`
   padding: 3rem 0;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
   overflow-y: auto;
   gap: 2rem;
 
@@ -70,9 +72,10 @@ export const SideItem = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
   color: black;
   background: #fff;
-  padding: 8px 20px;
+  /* padding: 8px 10px; */
   border-radius: 8px;
   border-bottom: 1px solid gray;
 
@@ -81,13 +84,17 @@ export const SideItem = styled.div`
     height: 150px;
   }
 
-  p {
+  h3, p {
     padding: 0 10px;
+  }
+
+  h3 {
     font-size: 1rem;
+    width: 40%;
   }
 
   svg {
-    color: black;
+    font-size: 1.4rem;
   }
 
   button {
