@@ -21,7 +21,7 @@ const Funkos = ({ funko }: FunkoProps) => {
         <div>
           <div className="photo-gallery">
             <Image
-              style={{ border: "1px solid gray"}}
+              style={{ border: "1px solid gray" }}
               src={funko.images.icon1}
               alt={funko.title}
               width={60}
@@ -46,12 +46,9 @@ const Funkos = ({ funko }: FunkoProps) => {
               />
             )}
           </div>
-          <Image
-            style={{marginLeft: "50px"}}  
+          <Image id="main-img"
             src={funko.images.icon1}
             alt={funko.title}
-            width={250}
-            height={300}
           />
         </div>
         <div className="product-details">

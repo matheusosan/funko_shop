@@ -7,6 +7,7 @@ export const ProductPage = styled.div`
   width: 100%;
   gap: 8rem;
   min-height: 80vh;
+  margin: 1.5rem 0;
 
   > div {
     display: flex;
@@ -41,6 +42,20 @@ export const ProductPage = styled.div`
         transition: .3s ease;
         
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 3rem;
+
+    #main-img {
+      width: 150px;
+      height: 200px;
+    }
+
+    .product-details {
+      width: 80%;
     }
   }
 `;

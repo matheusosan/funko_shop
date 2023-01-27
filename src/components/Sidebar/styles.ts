@@ -2,22 +2,28 @@ import styled from "styled-components";
 
 export const SideBar = styled.aside`
   position: absolute;
-  background: ${(props) => props.theme.colors.blue1};
   right: 0;
   top: 0;
+  background: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 60%;
+  width: 80%;
   height: 100vh;
   animation: slide-left ease 0.8s;
   box-shadow: 6px 6px 15px -8px rgba(0, 0, 0, 0.75);
+  z-index: 10;
 
-  svg {
-    position: absolute;
-    top: 3%;
-    left: 5%;
-    cursor: pointer;
+  #side-top {
+    display: flex;
+    align-items: center;
+    background: ${props => props.theme.colors.blue1};
+    height: 8vh;
+    width: 100%;
+
+    svg {
+      color: white;
+    }
   }
 
   button {
@@ -56,32 +62,32 @@ export const SideContent = styled.div`
   width: 100%;
   overflow-y: auto;
   gap: 2rem;
+
 `;
 
 export const SideItem = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 60%;
-  height: 30%;
   color: black;
   background: #fff;
   padding: 8px 20px;
   border-radius: 8px;
+  border-bottom: 1px solid gray;
 
   img {
-    width: 50px;
-    height: 80px;
-  }
-
-  h3 {
-    font-size: .8rem;
+    width: 100px;
+    height: 150px;
   }
 
   p {
-    font-size: .6rem;
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+
+  svg {
+    color: black;
   }
 
   button {

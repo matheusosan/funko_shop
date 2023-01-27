@@ -3,6 +3,7 @@ import { CartContext } from "@/contexts/Context";
 import React, { useContext } from "react";
 import * as S from "./styles";
 import { BsFillTrashFill } from "react-icons/bs";
+import Link from "next/link";
 
 const Cart = () => {
   const { shoppingCart, removeFromCart, increaseCart, decreaseCart } =
@@ -17,7 +18,9 @@ const Cart = () => {
           <h2>Carrinho:</h2>
           {shoppingCart.map((item) => (
             <div key={item.product.id}>
-              <img src={item.product.images.icon1} alt={item.product.title} />
+              <Link href={`/product/${item.product.id}`}>
+                <img src={item.product.images.icon1} alt={item.product.title} />
+              </Link>
 
               <div className="product">
                 <h3>Produto</h3>

@@ -27,7 +27,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="content-container">
+        <div id="reverse" className="content-container">
           <div className="img-container">
             <img src={`${img2.src}`} alt="" style={{ width: "300px" }} />
           </div>

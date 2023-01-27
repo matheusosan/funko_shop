@@ -37,15 +37,16 @@ export const CartContainer = styled.div`
         cursor: pointer;
       }
 
-    > img {
-      height: 130px;
-      width: 100px;
-    }
+    >a>img {
+       height: 130px;
+       width: 100px;
+     }
 
     .product,
     .quantity,
     .price {
       height: 100%;
+      width: 30%;
 
       h3 {
         font-size: 1rem;
@@ -59,6 +60,7 @@ export const CartContainer = styled.div`
 
       .handle-quantity {
         display: flex;
+        align-items: center;
         gap: 0.5rem;
 
         button {
@@ -76,7 +78,11 @@ export const CartContainer = styled.div`
     > div {
       align-items: flex-start;
       gap: 0.5rem;
+      text-align: center;
 
+      svg {
+        font-size: 1.5rem;
+      }
     }
 
     > div > img {
