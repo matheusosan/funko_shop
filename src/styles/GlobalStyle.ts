@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle `
 
     body, html {
         min-height: 100vh;
-         
+         background: ${props => props.theme.colors.background}
     }
 
     a {
@@ -27,5 +27,6 @@ export const GlobalStyle = createGlobalStyle `
 
     button {
         border: none;
-    }
+        color: #000;
+      }
 `

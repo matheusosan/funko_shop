@@ -4,13 +4,13 @@ export const SideBar = styled.aside`
   position: absolute;
   right: 0;
   top: 0;
-  background: #fff;
+  background: ${props => props.theme.colors.background};
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 95%;
   height: 100vh;
-  animation: slide-left ease 0.8s;
+  animation: slide-left .3s;
   box-shadow: 6px 6px 15px -8px rgba(0, 0, 0, 0.75);
   z-index: 10;
 
@@ -48,7 +48,7 @@ export const SideBar = styled.aside`
         opacity: 0;
       }
       100% {
-        width: 60%;
+        width: 95%;
         opacity: 1;
       }
     }
@@ -74,7 +74,7 @@ export const SideItem = styled.div`
   text-align: center;
   width: 100%;
   color: black;
-  background: #fff;
+  background: ${props => props.theme.colors.background};
   /* padding: 8px 10px; */
   border-radius: 8px;
   border-bottom: 1px solid gray;
@@ -94,7 +94,8 @@ export const SideItem = styled.div`
   }
 
   svg {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    color: black;
   }
 
   button {

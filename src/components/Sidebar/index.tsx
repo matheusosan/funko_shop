@@ -18,7 +18,7 @@ const Sidebar = () => {
                 <AiOutlineClose onClick={handleSidebar} />
               </div>
           {shoppingCart.length === 0 ? (
-              <h2 style={{marginTop: '50%'}}>Não há itens no carrinho.</h2>
+              <h2 style={{marginTop: '50%', textAlign: 'center'}}>Não há itens no carrinho.</h2>
           ) : (
               <S.SideContent>
                 {shoppingCart.map((item) => (

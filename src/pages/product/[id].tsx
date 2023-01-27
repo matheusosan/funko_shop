@@ -49,6 +49,8 @@ const Funkos = ({ funko }: FunkoProps) => {
           <Image id="main-img"
             src={funko.images.icon1}
             alt={funko.title}
+            width={60}
+            height={80}
           />
         </div>
         <div className="product-details">

@@ -24,7 +24,7 @@ export const CartContainer = styled.div`
   margin: 5rem 0;
   gap: 3rem 0;
   width: 40%;
-  background: #f5f5f5;
+  background: ${props => props.theme.colors.background};
 
   > div {
     display: flex;
@@ -47,7 +47,7 @@ export const CartContainer = styled.div`
     .quantity,
     .price {
       height: 100%;
-      width: 30%;
+      width: 25%;
 
       h3 {
         font-size: 1rem;
@@ -82,19 +82,21 @@ export const CartContainer = styled.div`
       text-align: center;
 
       svg {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        color: black;
       }
     }
 
-    > div > img {
-      height: 100px;
-      width: 70px;
+    > div > a> img {
+      height: 80px;
+      width: 50px;
     }
 
     .price,
     .product,
     .quantity {
       align-items: flex-start;
+      width: 30%;
 
       p {
         font-size: 0.8rem;

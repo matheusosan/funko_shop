@@ -44,7 +44,7 @@ const Cart = () => {
                 <h3>Preço Total</h3>
                 <p>R${(item.quantity * item.product.price).toFixed(2)}</p>
               </div>
-              <BsFillTrashFill
+              <BsFillTrashFill style={{color: 'black'}}
                 onClick={() => removeFromCart(item.product.id)}
               />
             </div>
