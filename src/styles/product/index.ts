@@ -8,6 +8,7 @@ export const ProductPage = styled.div`
   gap: 8rem;
   min-height: 80vh;
   margin: 1.5rem 0;
+  color: ${props => props.theme.colors.text};
 
   > div {
     display: flex;
@@ -17,6 +18,11 @@ export const ProductPage = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    #main-img {
+      width: 250px;
+      height: 300px;
+    }
   }
 
   .product-details {

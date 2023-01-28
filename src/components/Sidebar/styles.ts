@@ -14,6 +14,12 @@ export const SideBar = styled.aside`
   box-shadow: 6px 6px 15px -8px rgba(0, 0, 0, 0.75);
   z-index: 10;
 
+  >h2 {
+      margin-top: 10rem;
+      text-align: center;
+      color: ${props => props.theme.colors.text};
+    }
+
   #side-top {
     display: flex;
     align-items: center;
@@ -64,7 +70,6 @@ export const SideContent = styled.div`
   overflow-x: hidden;
   overflow-y: auto;
   gap: 2rem;
-
 `;
 
 export const SideItem = styled.div`
@@ -75,7 +80,7 @@ export const SideItem = styled.div`
   width: 100%;
   color: black;
   background: ${props => props.theme.colors.background};
-  /* padding: 8px 10px; */
+  color: ${props => props.theme.colors.text};
   border-radius: 8px;
   border-bottom: 1px solid gray;
 
@@ -95,7 +100,7 @@ export const SideItem = styled.div`
 
   svg {
     font-size: 1.3rem;
-    color: black;
+    color: ${props => props.theme.colors.text};
   }
 
   button {

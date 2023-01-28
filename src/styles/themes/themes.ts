@@ -16,6 +16,7 @@ export const light = {
         blue5: '#184E77',
 
         background: '#f5f5f5',
+        cardBg: '#f5f5f5',
         text: '#212529'
     }
 }
@@ -38,7 +39,8 @@ export const dark = {
         blue5: '#34A0A4',
 
         background: '#141d26',
-        text: '#f5f5f5'
+        cardBg: '#f5f5f5',
+        text: '#f5f5f5',
     }
 }
 

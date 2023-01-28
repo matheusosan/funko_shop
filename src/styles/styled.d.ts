@@ -18,6 +18,7 @@ declare module "styled-components" {
       blue5: string;
 
       background: string;
+      cardBg: string;
       text: string;
     };
   }

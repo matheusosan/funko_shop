@@ -12,7 +12,7 @@ const Cart = () => {
   return (
     <S.CartMain>
       {shoppingCart.length === 0 ? (
-        <h2>Não há itens no carrinho.</h2>
+        <h2 style={{marginTop: '4rem'}}>Não há itens no carrinho.</h2>
       ) : (
         <S.CartContainer>
           <h2>Carrinho:</h2>
@@ -44,7 +44,7 @@ const Cart = () => {
                 <h3>Preço Total</h3>
                 <p>R${(item.quantity * item.product.price).toFixed(2)}</p>
               </div>
-              <BsFillTrashFill style={{color: 'black'}}
+              <BsFillTrashFill
                 onClick={() => removeFromCart(item.product.id)}
               />
             </div>

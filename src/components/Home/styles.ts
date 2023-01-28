@@ -11,6 +11,7 @@ export const MainHome = styled.main`
   padding: 5rem 0;
   width: 100%;
   background: ${(props) => props.theme.colors.background};
+  color: ${props => props.theme.colors.text}
 `;
 
 export const MainContent = styled.div`

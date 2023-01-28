@@ -12,7 +12,7 @@ const poppins = Poppins ({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [theme, setTheme] = useState(light);
+  const [theme, setTheme] = useState(dark);
 
   const toggleTheme = () => {
     setTheme(theme.title === "light" ? dark : light);

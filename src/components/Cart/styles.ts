@@ -8,6 +8,8 @@ export const CartMain = styled.div`
   min-height: 80vh;
   height: auto;
   gap: 5rem;
+  color: ${props => props.theme.colors.text};
+
 
   @media (max-width: 768px) {
     align-items: center;
@@ -25,6 +27,7 @@ export const CartContainer = styled.div`
   gap: 3rem 0;
   width: 40%;
   background: ${props => props.theme.colors.background};
+  
 
   > div {
     display: flex;
@@ -66,12 +69,15 @@ export const CartContainer = styled.div`
 
         button {
           font-size: 1.2rem;
+          background: ${props => props.theme.colors.background};
+          color: #fff;
         }
       }
     }
   }
 
   @media (max-width: 768px) {
+    align-items: center;
     width: 80%;
     margin: 2rem 0;
     gap: 1.2rem;
@@ -83,7 +89,6 @@ export const CartContainer = styled.div`
 
       svg {
         font-size: 1rem;
-        color: black;
       }
     }
 
