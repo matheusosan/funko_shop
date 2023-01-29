@@ -57,29 +57,4 @@ export const Footer = styled.footer`
       cursor: pointer;
     }
   }
-  @media (max-width: 420px) {
-    height: auto;
-    .first-line {
-        p {
-            font-size: 1rem;
-        }
-        button {
-            font-size: .8rem;
-            padding: 0px 20px;
-        }
-    }
-    .mid-line {
-        flex-direction: column;
-    }
-    .bottom-line {
-        span {
-            font-size: 8px;
-            gap: 1rem;
-        }
-        svg {
-            font-size: 1rem;
-        }
-        margin-bottom: 2rem;
-    }
-  }
 `;
