@@ -37,13 +37,13 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background: ${(props) => props.theme.colors.cardBg};
   width: 200px;
   height: 400px;
   text-align: center;
   box-shadow: 6px 6px 15px -8px rgba(0, 0, 0, 0.75);
-  padding: 30px;
+  padding: 10px;
   border-radius: 5px;
   transition: 0.5s ease;
 
@@ -53,9 +53,12 @@ export const Card = styled.div`
   }
 
   h3 {
+    display: flex;
+    align-items: center;
     color: black;
     font-weight: 700;
     font-size: 0.9rem;
+    height: 20%;
   }
 
   p {
@@ -79,6 +82,6 @@ export const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 150px;
+    width: 180px;
   }
 `;
