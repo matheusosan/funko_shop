@@ -37,7 +37,7 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background: ${(props) => props.theme.colors.cardBg};
   width: 200px;
   height: 400px;

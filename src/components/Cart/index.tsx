@@ -112,7 +112,9 @@ const Cart = () => {
             <p>R${finalPay.toFixed(2)}</p>
           </div>
 
-          <button>FINISH ORDER</button>
+          <Link href="/checkout">
+            <button>FINISH ORDER</button>
+          </Link>
         </S.ReviewOrder>
       )}
     </S.CartMain>
