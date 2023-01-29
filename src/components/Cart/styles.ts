@@ -142,6 +142,7 @@ export const ReviewOrder = styled.div`
     background: ${(props) => props.theme.colors.blue1};
     color: #fff;
     font-weight: 700;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {

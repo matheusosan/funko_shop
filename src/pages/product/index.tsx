@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import ShoppingCartPage from "../../components/ProductsPage";
 import PageFooter from "@/components/Footer";
 
-const explore = () => {
+const product = () => {
   return (
     <>
       <Header />
@@ -13,4 +13,4 @@ const explore = () => {
   );
 };
 
-export default explore;
+export default product;
