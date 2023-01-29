@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { CartContext } from "@/contexts/Context";
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 import * as S from "./styles";
 import { BsFillTrashFill } from "react-icons/bs";
 import Link from "next/link";
@@ -9,10 +9,50 @@ const Cart = () => {
   const { shoppingCart, removeFromCart, increaseCart, decreaseCart } =
     useContext(CartContext);
 
+  const [discount, setDiscount] = useState<string | null>(null);
+  const [discountValue, setDiscountValue] = useState<number | null>(null);
+
+  const form = useRef<HTMLFormElement>(null);
+  const formData = (e: React.FormEvent) => {
+    e.preventDefault();
+    const coupon = (form.current as HTMLFormElement).coupon.value;
+    setDiscount(coupon);
+    (e.target as HTMLFormElement).reset();
+  };
+
+  useEffect(() => {
+    switch (discount) {
+      case "5OFF":
+      case "5off":
+        setDiscountValue(5);
+        break;
+      case "10OFF":
+      case "10off":
+        setDiscountValue(10);
+        break;
+      default:
+        setDiscountValue(null);
+    }
+  }, [discount]);
+
+  const subtotalValue = shoppingCart.reduce((total, current) => {
+    return total + current.product.price * current.quantity;
+  }, 0);
+
+  const totalWithDiscount = shoppingCart.reduce((total, current) => {
+    return (
+      total +
+      (current.product.price * current.quantity * (discountValue as number)) /
+        100
+    );
+  }, 0);
+
+  const finalPay = subtotalValue - totalWithDiscount;
+
   return (
     <S.CartMain>
       {shoppingCart.length === 0 ? (
-        <h2 style={{marginTop: '4rem'}}>Não há itens no carrinho.</h2>
+        <h2 style={{ marginTop: "4rem" }}>Não há itens no carrinho.</h2>
       ) : (
         <S.CartContainer>
           <h2>Carrinho:</h2>
@@ -55,19 +95,21 @@ const Cart = () => {
       {shoppingCart.length >= 1 && (
         <S.ReviewOrder>
           <h2>Resumo do pedido</h2>
-
-          <div className="shipment">
-            <h3>Frete</h3>
-            <input type="text" />
+          <div className="discount">
+            <h3>Cupom</h3>
+            <form action="" ref={form} onSubmit={formData}>
+              <input type="text" name="coupon" placeholder="Digite seu cupom" />
+              <input value="Aplicar" type="submit" />
+            </form>
           </div>
           <div className="subtotal">
             <h3>Subtotal</h3>
-            <p>Subtotal</p>
+            <p>R${subtotalValue.toFixed(2)}</p>
           </div>
 
           <div className="total">
             <h3>Total</h3>
-            <p>Total</p>
+            <p>R${finalPay.toFixed(2)}</p>
           </div>
 
           <button>FINISH ORDER</button>

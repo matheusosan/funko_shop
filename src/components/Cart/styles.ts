@@ -116,19 +116,25 @@ export const ReviewOrder = styled.div`
   margin-top: 5rem;
   gap: 3rem;
 
-  .shipment,
-  .subtotal,
-  .total {
+  form {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
+    gap: 1rem;
 
-  .shipment {
     input {
-      margin-left: 20px;
+      padding: 5px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    input[value="Aplicar"]{
+      color: ${props => props.theme.colors.text};
+      background: ${props => props.theme.colors.blue1};
+      padding: 5px;
+      cursor: pointer;
     }
   }
+
 
   button {
     width: 330px;
