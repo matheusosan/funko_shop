@@ -8,7 +8,7 @@
 </p>
 
 ## 🎨 Preview
-![landing-pic](https://user-images.githubusercontent.com/14915767/212443967-5e1d22b5-f76e-468a-884d-456016c067e8.png)
+![Captura de tela de 2023-02-01 23-50-05](https://user-images.githubusercontent.com/14915767/216219568-94029652-3224-4ff0-b01c-56e0efa05d34.png)
 
 ## ⚙ Features
 - Dynamic Routes com NextJS
