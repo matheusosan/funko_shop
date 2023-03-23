@@ -6,6 +6,7 @@ import React, { useContext, useState } from "react";
 import funkos from "../../services/index";
 import Header from "@/components/Header";
 import * as S from "../../styles/product";
+import Head from 'next/head'
 
 interface FunkoProps {
   funko: IFunkos;
@@ -16,6 +17,9 @@ const Funkos = ({ funko }: FunkoProps) => {
 
   return (
     <>
+      <Head>
+        <title>Produto | {funko.title}</title>
+      </Head>
       <Header />
       <S.ProductPage>
         <div>

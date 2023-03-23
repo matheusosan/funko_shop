@@ -6,7 +6,7 @@ import { BsFillTrashFill } from "react-icons/bs";
 import Link from "next/link";
 
 const Cart = () => {
-  const { shoppingCart, removeFromCart, increaseCart, decreaseCart } =
+  const { shoppingCart, removeFromCart, increaseCart, decreaseCart, handleClearCart } =
     useContext(CartContext);
 
   const [discount, setDiscount] = useState<string | null>(null);
